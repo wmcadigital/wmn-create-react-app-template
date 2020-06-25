@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["react-app", "airbnb", "plugin:prettier/recommended", "plugin:jsx-a11y/recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018
+  },
+  "plugins": ["jsx-a11y", "jam3"],
+  "rules": {
+    "react/no-danger": 0, // Turned this rule off for dangerouslySetInnerHTML, as we are using the jam3/no-sanitizer-with-danger rule to flag if we are using it without sanitizer
+    "jam3/no-sanitizer-with-danger": [
+      2,
+      {
+        "wrapperName": ["sanitize"]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-curly-newline": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "controlComponents": ["DebounceInput"],
+        "depth": 3
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}
