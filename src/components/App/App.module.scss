@@ -2,8 +2,9 @@
 // On how to use scss modules with React
 
 // Import WMN Design System scss for use in this scss file
-@import '../../assets/wmnds/vars';
-@import '../../assets/wmnds/mixins';
+// Tilde (~) represents the root folder(src)
+@import '~assets/wmnds/vars';
+@import '~assets/wmnds/mixins';
 
 .icon {
   height: 50px;
