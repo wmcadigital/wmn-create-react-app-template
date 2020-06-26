@@ -11,7 +11,7 @@
 # Linter SpaceBeforeBrace, option "allow_single_line_padding"
 
 files:
-  include: '**/*.s+(a|c)ss'
+  include: 'src/**/*.s+(a|c)ss'
   ignore: 'node_modules/**/*'
 exculde:
 options:
@@ -34,10 +34,10 @@ rules:
 
   # Rule class-name-format will enforce a convention for class names.
   # https://github.com/sasstools/sass-lint/blob/master/docs/rules/class-name-format.md#example-7
-  # will allow .block {}, .block__element{}, .block--modifier {}
+  # will allow .block {}, .blockElement{}
   class-name-format:
     - 2
-    - convention: hyphenatedbem
+    - convention: camelcase
 
   # Rule clean-import-paths will enforce whether or not @import paths should have leading underscores and/or filename extensions.
   # https://github.com/sasstools/sass-lint/blob/master/docs/rules/clean-import-paths.md
