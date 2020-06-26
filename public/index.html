@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="wmnds-html">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <!-- CHANGE ME -->
+    <meta name="description" content="Description about the wmn-app-name" />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/favicons/favicon-32x32.png"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicons/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="#3c1053" />
+    <!-- Windows phones -->
+    <meta name="msapplication-navbutton-color" content="#3c1053" />
+    <meta name="msapplication-TileColor" content="#3c1053" />
+    <meta name="msapplication-config" content="%PUBLIC_URL%/favicons/browserconfig.xml" />
+    <!-- iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/favicons/safari-pinned-tab.svg" color="#3c1053" />
+    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,20 +45,130 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- WMN design system CSS -->
+    <link
+      rel="stylesheet"
+      href="https://designsystem.wmnetwork.co.uk/css/wmnds-components.min.css"
+    />
+
+    <!-- CHANGE ME -->
+    <title>
+      App name - West Midlands Network
+    </title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NVSWZS');
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
+
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NVSWZS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Skip to content link -->
+    <a
+      href="#wmnds-main-content"
+      title="Skip to main content"
+      target="_self"
+      class="wmnds-link wmnds-header__skip-link"
+      >Skip to main content</a
+    >
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- Header -->
+    <header class="wmnds-header">
+      <div class="wmnds-container wmnds-grid wmnds-grid--align-center wmnds-grid--justify-between">
+        <div class="wmnds-header__vertical-align wmnds-col-auto">
+          <!-- Logo -->
+          <a
+            class="wmnds-header__logo-link"
+            href="//wmnetwork.co.uk"
+            title="West Midlands Network Home"
+          >
+            <img
+              class="wmnds-header__logo"
+              alt="West Midlands Network logo"
+              src="//wmnetwork.netlify.com/img/logo.svg"
+            />
+          </a>
+          <!-- Phase indicator -->
+          <a
+            href="//wmnetwork.co.uk"
+            target="_self"
+            class="wmnds-phase-indicator"
+            title="Beta homepage of West Midlands Network Home"
+          >
+            Beta
+          </a>
+        </div>
+        <!-- CHANGE ME -->
+        <h1 class="wmnds-header__title wmnds-col-1 wmnds-col-sm-auto">
+          WMN app name
+        </h1>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start app here -->
+    <main id="wmnds-main-content">
+      <div id="wmn-app-name"></div>
+    </main>
+    <!-- End app -->
+
+    <!-- Footer -->
+    <footer class="wmnds-footer">
+      <div class="wmnds-container wmnds-grid">
+        <div class="wmnds-col-1 wmnds-col-md-1-2">
+          Copyright West Midlands Network &copy; 2020
+        </div>
+        <div class="wmnds-col-1 wmnds-col-md-1-2">
+          <a
+            href="https://www.wmnetwork.co.uk/privacy-cookies-policy/"
+            title="Privacy and cookies policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="wmnds-footer__link wmnds-link"
+            >Privacy & Cookies Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Ajax SVG in, SVGS are referenced in app (Icon component) -->
+    <script>
+      const ajax = new XMLHttpRequest();
+      ajax.open('GET', 'https://designsystem.wmnetwork.co.uk/img/wmnds-sprite.min.svg', true);
+      ajax.send();
+      ajax.onload = function () {
+        const div = document.createElement('div');
+        div.style.display = 'none';
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+      };
+    </script>
   </body>
 </html>
