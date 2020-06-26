@@ -422,7 +422,7 @@ rules:
   # https://github.com/sasstools/sass-lint/blob/master/docs/rules/quotes.md
   quotes:
     - 2
-    - style: double
+    - style: single
 
   # Rule shorthand-values will enforce that values in their shorthand form are as concise as specified.
   # https://github.com/sasstools/sass-lint/blob/master/docs/rules/shorthand-values.md

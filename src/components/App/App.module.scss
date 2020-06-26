@@ -1,6 +1,17 @@
-// https://create-react-app.dev/docs/adding-a-css-modules-stylesheet
-.changeMe {
-  // display: block;
-  // width: 20px;
-  height: 100%;
+// Refer to https://create-react-app.dev/docs/adding-a-css-modules-stylesheet
+// On how to use scss modules with React
+
+// Import WMN Design System scss for use in this scss file
+@import '../../assets/wmnds/vars';
+@import '../../assets/wmnds/mixins';
+
+.icon {
+  height: 50px;
+  // get-color() function taken from mixins (refer to: https://designsystem.wmnetwork.co.uk/styles/colour-palettes/ for usage)
+  fill: get-color(secondary);
+
+  // $breakpoint-md var taken from vars
+  @media all and (min-width: $breakpoint-md) {
+    fill: get-color(primary);
+  }
 }
