@@ -1,4 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# West Midlands Network Create React App template
+
+## Get started
+
+### Installation
+
+- Click `Use this template` in the top right hand corner of Github
+- Git clone your newly created repo based on this github template
+- `npm i` to install dependencies
+
+#### Alternatively
+
+- Clone the project: `git clone https://github.com/wmcadigital/wmn-create-react-app-template.git`
+- `npm i` to install dependencies
+
+## Installed pacakges
+
+### Dependencies
+
+- [Create React App](https://create-react-app.dev/docs/getting-started/)
+- [node-sass](https://www.npmjs.com/package/node-sass)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [react-app-polyfill](https://www.npmjs.com/package/react-app-polyfill)
+
+### Dev Dependencies
+
+- [eslint (included with Create React App)](https://create-react-app.dev/docs/setting-up-your-editor)
+- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+- [eslint-plugin-jam3](https://www.npmjs.com/package/eslint-plugin-jam3)
+- [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
+- [prettier](https://prettier.io/)
+- [react-app-rewired](https://github.com/timarney/react-app-rewired#readme)
+- sass-lint (soon to move to [stylelint](https://stylelint.io/))
+- sass-lint-webpack (soon to move to [stylelint-webbpack-plugin](https://stylelint.io/user-guide/integrations/task-runner))
 
 ## Available Scripts
 
@@ -36,33 +70,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
