@@ -12,19 +12,11 @@ function App() {
         <p>Don&apos;t forget to:</p>
         <ul>
           <li>
-            Update the{' '}
-            <a
-              href="https://designsystem.wmnetwork.co.uk/docs/get-started/production/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              WMN Design System CSS to the latest version
-            </a>{' '}
-            on <strong>line:51 of index.html</strong>
+            Update the variables in <strong>.env</strong> file
           </li>
-          <li>Change the page title</li>
-          <li>Change meta title and description</li>
-          <li>Update the breadcrumbs</li>
+          <li>
+            Update the <strong>breadcrumbs</strong>
+          </li>
         </ul>
 
         {/* Bus */}
