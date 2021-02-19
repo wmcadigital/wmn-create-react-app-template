@@ -11,6 +11,7 @@
   "copyright": "WMCA",
   "scripts": {
     "start": "react-app-rewired start",
+    "lint:styles": "sass-lint '**/*.scss'",
     "update-packages": "ncu",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
@@ -52,6 +53,5 @@
       "ie 11"
     ]
   },
-
   "sasslintConfig": ".sass-lint.yml"
 }
