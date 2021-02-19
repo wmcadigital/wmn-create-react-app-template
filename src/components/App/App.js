@@ -7,8 +7,18 @@ import s from './App.module.scss';
 function App() {
   return (
     <div className="wmnds-container wmnds-p-t-lg wmnds-p-b-lg wmnds-grid">
-      <h2 className="wmnds-col-1">Hello West Midlands!</h2>
       <div className="wmnds-col-1">
+        <h2>Hello West Midlands!</h2>
+        <p>Don&apos;t forget to:</p>
+        <ul>
+          <li>
+            Update the variables in <strong>.env</strong> file
+          </li>
+          <li>
+            Update the <strong>breadcrumbs</strong>
+          </li>
+        </ul>
+
         {/* Bus */}
         <Icon className={`${s.icon} wmnds-col-1 wmnds-col-sm-1-3`} iconName="modes-isolated-bus" />
         {/* Metro */}
