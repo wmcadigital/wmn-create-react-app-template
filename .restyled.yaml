@@ -31,12 +31,14 @@ statuses:
   no_differences: true
   error: true
 
-request_review: none
+request_review: author
 
 labels: []
 
 ignore_labels:
   - restyled-ignore
+
+restylers_version: stable
 
 restylers:
   - clang-format:
